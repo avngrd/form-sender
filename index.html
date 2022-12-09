@@ -16,15 +16,27 @@
                 <h1 class="form-title">Send your Email!</h1>
                 <div class="form-item">
                     <label for="formName" class="form-label">Name:</label>
-                    <input id="formName" type="text" name="name" class="form-input">
+                    <input id="formName" type="text" name="name" class="form-input req">
                 </div>
                 <div class="form-item">
                     <label for="formEmail" class="form-label">Email:</label>
-                    <input id="formEmail" type="text" name="email" class="form-input">
+                    <input id="formEmail" type="text" name="email" class="form-input req email">
                 </div>
+                <div class="form-item">
+                    <div class="file">
+                        <div class="file-item">
+                            <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file-input">
+                            <div class="file-button">Choose</div>
+                        </div>
+                        <div id="formPreview" class="file-preview">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="form-button">Send</button>
             </form>
         </div>
     </div>
    </main>
 </body>
+<script src="script.js"></script>
 </html>

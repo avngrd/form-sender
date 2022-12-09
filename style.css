@@ -23,3 +23,69 @@ main {
 .title{
     font-size: 35px;
 }
+
+.form-input.error{
+    box-shadow: 0 0 15px red;
+}
+
+.error{
+    box-shadow: 0 0 15px red;
+}
+
+.form-input:focus{
+    box-shadow: 0 0 15px #8ba5e2;
+}
+
+.file-preview{
+    max-width: 100px;
+    padding: 10px 0px 0px 0px;
+    display: inline-block;
+}
+
+.file-preview img{
+    max-width: 100%;
+}
+
+.file-item{
+    position: relative;
+}
+
+.file-input{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.file-button{
+    display: inline-flex;
+    min-height: 40px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.form-body{
+    position: relative;
+}
+
+
+.form-body::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgb(253, 253, 253, 0.9) url("./img/load.gif") center ;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form-body.sending::after{
+    opacity: 1;
+    visibility: visible;
+}
